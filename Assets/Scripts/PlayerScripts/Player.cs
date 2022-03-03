@@ -11,4 +11,12 @@ public class Player : MonoBehaviour
     {
         return damage;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Projectile"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }

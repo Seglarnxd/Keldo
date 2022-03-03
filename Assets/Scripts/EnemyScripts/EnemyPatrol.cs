@@ -67,4 +67,6 @@ public class EnemyPatrol : MonoBehaviour
         //if (isFalling)
         //    rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
     }
+    
+
 }
