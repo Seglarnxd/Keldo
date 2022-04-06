@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class OrbProjectile : MonoBehaviour
 {
-    public int damage = 2;
+    public int damage = 1;
     private float xForce = 200;
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +25,11 @@ public class OrbProjectile : MonoBehaviour
         if (!other.gameObject.CompareTag("DoesNotDestroy"))
         {
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Player.instance.TakeDamage(damage);
         }
     }
 }

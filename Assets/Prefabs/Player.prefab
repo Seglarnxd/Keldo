@@ -216,13 +216,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 497804666675306476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cfa2bc0000f824b855b6f7c3842dd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 82a10491ae84ca14c97d049b32c65f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sword: {fileID: 497804665288952351}
-  swordSprite: {fileID: 21300000, guid: aeb1e083c8740b746aec367772c5132e, type: 3}
-  originalSprite: {fileID: 21300000, guid: 02c3544871d599b4a84424eeb4230660, type: 3}
-  timeBetweenAttack: 0.5
+  sword: {fileID: 0}
+  swordSprite: {fileID: 0}
+  originalSprite: {fileID: 0}
+  timeBetweenAttack: 1
   attackIsReady: 1
 --- !u!114 &497804666675306479
 MonoBehaviour:
@@ -307,3 +307,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+  currentHealth: 0
+  maxHealth: 0
